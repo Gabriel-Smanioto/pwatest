@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/pwatest/sw.js').then(registration => {
+        console.log('Service Worker registrado com sucesso:', registration);
+      }).catch(error => {
+        console.log('Falha ao registrar Service Worker:', error);
+      });
+    });
+  }
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Responsivo com Drawer Menu</title>
@@ -37,3 +49,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
