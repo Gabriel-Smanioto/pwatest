@@ -3,9 +3,7 @@ const urlsToCache = [
     '/pwatest/',
     '/pwatest/index.html',
     '/pwatest/style.css',
-    '/pwatest/manifest.json',
-    '/pwatest/icons/icon-192x192.png',
-    '/pwatest/icons/icon-512x512.png'
+    '/pwatest/manifest.json'
 ];
 
 self.addEventListener('install', event => {
@@ -26,4 +24,5 @@ self.addEventListener('fetch', event => {
     );
 
 });
+
 
